@@ -15,8 +15,8 @@ The Android app was developed entirely by me. It serves as the user interface fo
 >
 
 >
-> ![App Screenshot 1](images/app1.jpg)
-> ![App Screenshot 2](images/app2.jpg)
+<img src="images/app1.jpg" width="300" />
+<img src="images/app2.jpg" width="300" />
 
 ## 🐍 Python Backend (Raspberry Pi)
 
@@ -30,9 +30,9 @@ The backend system, written in Python, runs on a Raspberry Pi. This component wa
 
 > 📸 **Images of the Physical Setup**
 >
-> *(Place your hardware/prototype images here)*
+
 >
-> ![Prototype Setup](images/setup.jpg)
+<img src="images/setup.jpg" width="300" />
 
 ## 🛠️ Hardware Used
 
