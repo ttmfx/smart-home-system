@@ -17,6 +17,7 @@ The Android app was developed entirely by me. It serves as the user interface fo
 >
 <img src="images/app1.jpg" width="300" />
 <img src="images/app2.jpg" width="300" />
+<img src="images/app3.jpg" width="300" />
 
 ## 🐍 Python Backend (Raspberry Pi)
 
