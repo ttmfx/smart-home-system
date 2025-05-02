@@ -1,0 +1,62 @@
+package com.example.homeautomation.Utility;
+
+import org.java_websocket.client.WebSocketClient;
+import org.java_websocket.handshake.ServerHandshake;
+import java.net.URI;
+
+import android.util.Log;
+import org.java_websocket.client.WebSocketClient;
+import org.java_websocket.handshake.ServerHandshake;
+import java.net.URI;
+import java.net.URISyntaxException;
+
+public class MyWebSocketClient {
+    private WebSocketClient webSocketClient;
+
+    public MyWebSocketClient(String serverUri) {
+        try {
+            webSocketClient = new WebSocketClient(new URI(serverUri)) {
+                @Override
+                public void onOpen(ServerHandshake handshakedata) {
+                    Log.d("WebSocket", "Connected to WebSocket Server");
+                }
+
+                @Override
+                public void onMessage(String message) {
+                    Log.d("WebSocket", "Received: " + message);
+                    // Handle messages from Raspberry Pi
+                }
+
+                @Override
+                public void onClose(int code, String reason, boolean remote) {
+                    Log.d("WebSocket", "Connection closed: " + reason);
+                }
+
+                @Override
+                public void onError(Exception ex) {
+                    Log.e("WebSocket", "Error: " + ex.getMessage());
+                }
+            };
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void connect() {
+        webSocketClient.connect();
+    }
+
+    public void sendMessage(String message) {
+        if (webSocketClient.isOpen()) {
+            webSocketClient.send(message);
+        } else {
+            Log.e("WebSocket", "WebSocket is not open");
+        }
+    }
+
+    public void close() {
+        webSocketClient.close();
+    }
+}
+
+

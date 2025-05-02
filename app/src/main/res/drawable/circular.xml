@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape android:shape="ring"
+            android:useLevel="true"
+            android:innerRadiusRatio="3"
+            android:thicknessRatio="10"
+            android:thickness="8dp">
+            <solid android:color="#e0e0e0" />
+            <corners android:radius="50dp"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <rotate android:fromDegrees="238" android:pivotX="50%" android:pivotY="50%">
+            <shape android:shape="ring"
+                android:useLevel="true"
+                android:innerRadiusRatio="3"
+                android:thicknessRatio="10"
+
+                android:thickness="8dp">
+                <solid android:color="#A1A7F9"/>
+
+                <corners android:radius="20dp"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

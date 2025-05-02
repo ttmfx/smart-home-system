@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.HomeAutomation" parent="Theme.Material3.DayNight.NoActionBar">
+        Theme.AppCompat.DayNight.NoActionBar
+        <item name="colorControlActivated">#A1A7F9</item> <!-- green when ON -->
+        <item name="colorSwitchThumbNormal">#A1A7F9</item> <!-- gray when OFF -->
+<!--        <item name="colorControlNormal">#BDBDBD</item> &lt;!&ndash; light gray track &ndash;&gt;-->
+<!--        <item name="colorOnSurface">@color/purple</item>-->
+        <item name="colorSecondary">@color/purple</item>
+
+    </style>
+</resources>
