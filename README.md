@@ -54,5 +54,3 @@ This project was developed as part of a university assignment. While the entire 
 - **Hardware Integration** – collaborative
 - **Testing and Troubleshooting** – collaborative
 
-## 📂 Project Structure
-
