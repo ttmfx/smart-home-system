@@ -13,7 +13,7 @@ The Android app was developed entirely by me. It serves as the user interface fo
 
 > 📸 **Screenshots of the Android App**
 >
-> *(Place your screenshots in this section)*
+
 >
 > ![App Screenshot 1](images/app1.jpg)
 > ![App Screenshot 2](images/app2.jpg)
